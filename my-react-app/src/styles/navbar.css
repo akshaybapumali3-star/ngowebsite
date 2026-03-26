@@ -1,0 +1,72 @@
+/* ===== Navbar Container ===== */
+.main-header {
+  background-color: hsl(192, 83%, 25%);
+  padding: 14px 20px;
+
+}
+
+/* Center the navbar items */
+.navbar {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+}
+
+/* Navbar links container */
+.navbar .nav-links {
+  display: flex;
+  list-style: none; /* remove bullets */
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* space between links */
+  align-items: center;
+}
+
+/* Links style */
+.nav-links li a,
+.ngo-title {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-links li a:hover,
+.ngo-title:hover {
+  color: #ffd966;
+}
+
+/* NGO Dropdown */
+.ngo-dropdown {
+  position: relative;
+  cursor: pointer;
+  
+}
+
+/* Dropdown menu */
+.ngo-menu {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0b5f73;
+  min-width: 160px;
+  padding: 6px 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.ngo-menu li {
+  padding: 6px 16px;
+}
+
+.ngo-menu li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.ngo-menu li a:hover {
+  color: #ffd966;
+}

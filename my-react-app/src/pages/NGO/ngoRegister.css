@@ -1,0 +1,47 @@
+.ngo-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: #f5f5f5;
+}
+
+.ngo-card {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ngo-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ngo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ngo-form input {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ngo-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ngo-form button:hover {
+  background: darkcyan;
+}

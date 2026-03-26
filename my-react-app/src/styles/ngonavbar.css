@@ -1,0 +1,41 @@
+.ngo-navbar {
+  background-color: #0b5f73;
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ngo-title {
+  font-size: 17px;
+}
+
+.ngo-navbar nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.ngo-navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ngo-navbar a:hover {
+  color: #ffd966;
+}
+
+.logout-btn {
+  background-color: #ffd966;
+  border: none;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-btn:hover {
+  background-color: #ffcc33;
+}

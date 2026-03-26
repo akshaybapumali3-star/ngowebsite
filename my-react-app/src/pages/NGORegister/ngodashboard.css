@@ -1,0 +1,102 @@
+.ngo-dashboard{
+padding:0;
+text-align:center;
+background:#f5f9f9;
+}
+
+/* Slider */
+
+.slider{
+width:100%;
+height:450px;
+overflow:hidden;
+margin-top:0;
+}
+
+.slides{
+display:flex;
+width:300%;
+animation:slide 10s infinite;
+}
+
+.slides img{
+width:100%;
+height:480px;
+object-fit:cover;
+}
+
+/* Slider animation */
+
+@keyframes slide{
+0%,33%{
+transform:translateX(0);
+}
+
+34%,66%{
+transform:translateX(-33.333%);
+}
+
+67%,100%{
+transform:translateX(-66.666%);
+}
+}
+
+
+/* NGO Quotes */
+
+.ngo-quotes{
+background:white;
+padding:40px 20px;
+margin-top:30px;
+}
+
+.ngo-quotes h2{
+color:#0b5d6b;
+margin-bottom:20px;
+}
+
+.quote{
+font-size:18px;
+color:#444;
+margin:10px auto;
+max-width:700px;
+font-style:italic;
+}
+
+
+/* Info cards */
+
+.ngo-info{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+padding-bottom:40px;
+}
+
+.info-card{
+background:white;
+padding:25px;
+width:260px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.info-card:hover{
+transform:translateY(-6px);
+}
+
+.info-card h3{
+color:#0b5d6b;
+margin-bottom:10px;
+}
+.ngo-profile-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

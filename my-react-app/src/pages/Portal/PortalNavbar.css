@@ -1,0 +1,86 @@
+/* ================== Navbar Container ================== */
+.portal-navbar {
+  background-color: #0a3d62;
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end; /* links on the right */
+  align-items: center;
+  gap: 40px;
+}
+
+/* ================== Nav Links ================== */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 55px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #f39c12; /* highlight color */
+  border-bottom: 2px solid #f39c12;
+}
+
+/* ================== Hamburger Menu ================== */
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* ================== Mobile Nav ================== */
+.mobile-nav-links {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.mobile-nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu-toggle:checked ~ .mobile-nav-links {
+    display: flex;
+  }
+}

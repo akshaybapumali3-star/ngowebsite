@@ -1,0 +1,231 @@
+/* =====================================
+   BAL VATSALYA MARGE - AUTH DESIGN
+   Soft NGO Professional Theme
+===================================== */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  /* Soft NGO pastel gradient */
+  background: linear-gradient(120deg, #eaf7f5 0%, #ffffff 60%, #f9e8dc 100%);
+
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative soft circles */
+.auth-page::before,
+.auth-page::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.auth-page::before {
+  width: 300px;
+  height: 300px;
+  background: #007777;
+  top: -100px;
+  left: -100px;
+}
+
+.auth-page::after {
+  width: 250px;
+  height: 250px;
+  background: #f4a261;
+  bottom: -80px;
+  right: -80px;
+}
+
+/* ================= CARD ================= */
+
+.auth-card {
+  width: 430px;
+  max-width: 95%;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 45px 35px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ================= TOP SECTION ================= */
+
+.auth-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-logo {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #007777;
+  transition: transform 0.4s ease;
+}
+
+.auth-top h2 {
+  font-size: 22px;
+  color: #004c4c;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* ================= FORM ================= */
+
+.auth-inner {
+  margin-top: 10px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ================= INPUTS ================= */
+
+.auth-form input {
+  padding: 14px 18px;
+  border-radius: 15px;
+  border: 1.8px solid #e0e0e0;
+  font-size: 14px;
+  background: #fafafa;
+  transition: 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #007777;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 119, 119, 0.2);
+  outline: none;
+}
+
+/* ================= BUTTON ================= */
+
+.auth-primary {
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #007777, #004c4c);
+  color: white;
+
+  transition: 0.3s ease;
+}
+
+.auth-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 119, 119, 0.35);
+}
+
+/* ================= FOOTER ================= */
+
+.auth-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #007777;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* hover zoom kept consistent with footer */
+.auth-logo:hover {
+  transform: scale(1.15);
+}
+
+/* ================= EDIT PROFILE ================= */
+
+.photo-upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.photo-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #007777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f7f6, #ffffff);
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 119, 119, 0.2);
+}
+
+.photo-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  font-size: 48px;
+  font-weight: 700;
+  color: #007777;
+}
+
+.photo-upload-label {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #007777, #004c4c);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.photo-upload-label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 119, 119, 0.3);
+}
+
+.auth-cancel-btn {
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+  color: #666;
+  transition: 0.3s ease;
+}
+
+.auth-cancel-btn:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+}

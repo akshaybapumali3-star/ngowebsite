@@ -1,0 +1,110 @@
+/* Overlay with blur effect */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* lighter overlay */
+  background: rgba(0, 60, 60, 0.45);
+
+  /* very soft blur */
+  backdrop-filter: blur(2px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Popup Card */
+.popup-card {
+  background: #f4f1e6; /* beige like header */
+  width: 400px;
+  max-width: 90%;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+  animation: popupScale 0.3s ease;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  color: #004c4c;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Title */
+.popup-card h2 {
+  color: #004c4c;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.popup-card p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Buttons container */
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Login button */
+.login-btn {
+  background-color: #006d6d;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #004c4c;
+}
+
+/* Signup button */
+.signup-btn {
+  background-color: #0288a6;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #016b8f;
+}
+
+/* Animation */
+@keyframes popupScale {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
